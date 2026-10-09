@@ -1,0 +1,25 @@
+name: Waschanlagenmodus
+options:
+  bundleIdPrefix: de.dominicvogl
+  deploymentTarget:
+    macOS: "14.0"
+targets:
+  Waschanlagenmodus:
+    type: application
+    platform: macOS
+    sources: [Waschanlagenmodus]
+    scheme: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.dominicvogl.Waschanlagenmodus
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSUIElement: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Waschanlagenmodus
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        ENABLE_HARDENED_RUNTIME: YES
+        ENABLE_APP_SANDBOX: NO
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
