@@ -1,0 +1,30 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Accessibility access required" : {
+      "localizations" : { "de" : { "stringUnit" : { "state" : "translated", "value" : "Bedienungshilfen-Zugriff erforderlich" } } }
+    },
+    "Ends automatically at %@" : {
+      "localizations" : { "de" : { "stringUnit" : { "state" : "translated", "value" : "Automatisches Ende um %@" } } }
+    },
+    "Keyboard locked – time to clean 🫧" : {
+      "localizations" : { "de" : { "stringUnit" : { "state" : "translated", "value" : "Tastatur gesperrt – Zeit zum Putzen 🫧" } } }
+    },
+    "Open System Settings…" : {
+      "localizations" : { "de" : { "stringUnit" : { "state" : "translated", "value" : "Systemeinstellungen öffnen …" } } }
+    },
+    "Please restart the app to apply the permission" : {
+      "localizations" : { "de" : { "stringUnit" : { "state" : "translated", "value" : "Bitte App neu starten, damit die Berechtigung greift" } } }
+    },
+    "Quit App" : {
+      "localizations" : { "de" : { "stringUnit" : { "state" : "translated", "value" : "App beenden" } } }
+    },
+    "Start Car Wash Mode" : {
+      "localizations" : { "de" : { "stringUnit" : { "state" : "translated", "value" : "Waschanlagenmodus starten" } } }
+    },
+    "Stop Car Wash Mode" : {
+      "localizations" : { "de" : { "stringUnit" : { "state" : "translated", "value" : "Waschanlagenmodus beenden" } } }
+    }
+  },
+  "version" : "1.0"
+}

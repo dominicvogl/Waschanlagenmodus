@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		27EB0C4CFA3F0C794FB4EA93 /* WaschanlagenmodusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2150EB52D3DE939D6EA1CB33 /* WaschanlagenmodusApp.swift */; };
+		2AE5C840297A823A61295949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25AE2DEDBD77A9FE5BFD3BD /* Assets.xcassets */; };
 		89AFF5F9B748BE92847A64A4 /* KeyboardBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD666A8BD6FFFE3BFB596CE6 /* KeyboardBlocker.swift */; };
+		EFF66C78D163A6D3487D588C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 80C968D9C1AED564B901631C /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2150EB52D3DE939D6EA1CB33 /* WaschanlagenmodusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaschanlagenmodusApp.swift; sourceTree = "<group>"; };
+		80C968D9C1AED564B901631C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B44640739573B955C85ED375 /* Waschanlagenmodus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waschanlagenmodus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD666A8BD6FFFE3BFB596CE6 /* KeyboardBlocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBlocker.swift; sourceTree = "<group>"; };
+		F25AE2DEDBD77A9FE5BFD3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -37,10 +41,19 @@
 		B6E8848B59FC8C59F5C7D414 /* Waschanlagenmodus */ = {
 			isa = PBXGroup;
 			children = (
+				F25AE2DEDBD77A9FE5BFD3BD /* Assets.xcassets */,
 				CD666A8BD6FFFE3BFB596CE6 /* KeyboardBlocker.swift */,
+				80C968D9C1AED564B901631C /* Localizable.xcstrings */,
 				2150EB52D3DE939D6EA1CB33 /* WaschanlagenmodusApp.swift */,
 			);
 			path = Waschanlagenmodus;
+			sourceTree = "<group>";
+		};
+		"TEMP_229FF042-87E6-4543-970C-3F41A961428C" /* .claude */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = .claude;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -51,6 +64,7 @@
 			buildConfigurationList = 804E19FB0E045B1D19A1C3F2 /* Build configuration list for PBXNativeTarget "Waschanlagenmodus" */;
 			buildPhases = (
 				534C8BE2D59157428EBA0083 /* Sources */,
+				670876E63CF6968EF2E4E0BD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -82,6 +96,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				de,
 				en,
 			);
 			mainGroup = 41C6B4D9F732BCD7F3D93F85;
@@ -95,6 +110,18 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		670876E63CF6968EF2E4E0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE5C840297A823A61295949 /* Assets.xcassets in Resources */,
+				EFF66C78D163A6D3487D588C /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		534C8BE2D59157428EBA0083 /* Sources */ = {
@@ -186,13 +213,16 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Waschanlagenmodus;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Dominic Vogl – MIT License";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dominicvogl.Waschanlagenmodus;
 				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -267,13 +297,16 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Waschanlagenmodus;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Dominic Vogl – MIT License";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dominicvogl.Waschanlagenmodus;
 				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;

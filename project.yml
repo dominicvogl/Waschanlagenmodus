@@ -1,6 +1,7 @@
 name: Waschanlagenmodus
 options:
   bundleIdPrefix: de.dominicvogl
+  developmentLanguage: en
   deploymentTarget:
     macOS: "14.0"
 targets:
@@ -12,7 +13,11 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: de.dominicvogl.Waschanlagenmodus
-        MARKETING_VERSION: "1.0"
+        MARKETING_VERSION: "1.0.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_NSHumanReadableCopyright: "© 2026 Dominic Vogl – MIT License"
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LOCALIZATION_PREFERS_STRING_CATALOGS: YES
         CURRENT_PROJECT_VERSION: "1"
         SWIFT_VERSION: "5.0"
         GENERATE_INFOPLIST_FILE: YES

@@ -26,28 +26,28 @@ private struct MenuContent: View {
 
     var body: some View {
         if blocker.isActive {
-            Text("Tastatur gesperrt – Zeit zum Putzen 🫧")
+            Text("Keyboard locked – time to clean 🫧")
             if let endsAt = blocker.endsAt {
-                Text("Automatisches Ende um \(endsAt, style: .time)")
+                Text("Ends automatically at \(endsAt.formatted(date: .omitted, time: .shortened))")
             }
-            Button("Waschanlagenmodus beenden") { blocker.stop() }
+            Button("Stop Car Wash Mode") { blocker.stop() }
         } else {
-            Button("Waschanlagenmodus starten") { blocker.start() }
+            Button("Start Car Wash Mode") { blocker.start() }
         }
 
         switch blocker.problem {
         case .missingPermission:
             Divider()
-            Text("Bedienungshilfen-Zugriff erforderlich")
-            Button("Systemeinstellungen öffnen …") { KeyboardBlocker.openAccessibilitySettings() }
+            Text("Accessibility access required")
+            Button("Open System Settings…") { KeyboardBlocker.openAccessibilitySettings() }
         case .needsRestart:
             Divider()
-            Text("Bitte App neu starten, damit die Berechtigung greift")
+            Text("Please restart the app to apply the permission")
         case nil:
             EmptyView()
         }
 
         Divider()
-        Button("App beenden") { NSApplication.shared.terminate(nil) }
+        Button("Quit App") { NSApplication.shared.terminate(nil) }
     }
 }
